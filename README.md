@@ -2,6 +2,29 @@
 ### Introduction
 In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
 
+## Solution
+
+This solution consists on a VGG-16, downloaded pre-trained, modified as a fully convolutional network (by using 1x1 convolutional layers). This can be found in the function layers in main.py.
+
+Parameters for training:
+
+- learning_rate: 1e-4
+- Keep probability: 0.4
+- Number of epochs: 20
+- Batch size: 2
+
+## Results
+
+First epoch loss: 0.80
+Last epoch loss: 0.09
+Average decrease between epochs: 0.12
+
+The following data shows some results for the last run:
+
+![img1](./runs/1511740447.7584622/um_000085.png)
+![img2](./runs/1511740447.7584622/uu_000054.png)
+![img3](./runs/1511740447.7584622/umm_000039.png)
+
 ### Setup
 ##### Frameworks and Packages
 Make sure you have the following is installed:
